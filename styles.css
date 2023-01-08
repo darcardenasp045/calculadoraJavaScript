@@ -1,0 +1,94 @@
+.main-container{
+    display: grid;
+    justify-content: center;
+}
+.container {  
+    display: grid;
+    width: 300px;
+    height: 500px;
+    align-items: center;
+    justify-items: center;
+    background-color: rgba(26, 28, 27, 0.091);
+    grid-template-columns: 0.5fr 0.5fr 0.5fr 0.5fr;
+    grid-template-rows: 1fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+    "Resultado Resultado Resultado Resultado"
+    "CE C borrar division"
+    "siete ocho nueve multiplicacion"
+    "cuatro cinco seis resta"
+    "uno dos tres suma"
+    ". cero coma igual";
+}
+
+
+.Resultado { 
+    grid-area: Resultado; 
+    border: 2px solid black;
+    width: 90%;
+    height: 90%;
+    background-color: rgb(72, 61, 61);
+    display: grid;
+    justify-content: end;
+    color: aliceblue;
+    border-radius: 10px;
+}
+
+.siete { grid-area: siete;}
+
+.ocho { grid-area: ocho; }
+
+.nueve { grid-area: nueve; }
+
+.multiplicacion { grid-area: multiplicacion; }
+
+.resta { grid-area: resta; }
+
+.suma { grid-area: suma; }
+
+.igual { grid-area: igual; }
+
+.seis { grid-area: seis; }
+
+.cinco { grid-area: cinco; }
+
+.cuatro { grid-area: cuatro; }
+
+.tres { grid-area: tres; }
+
+.dos { grid-area: dos; }
+
+.uno { grid-area: uno; }
+
+.CE { grid-area: CE; }
+
+.C { grid-area: C; }
+
+.borrar { grid-area: borrar; }
+
+.division { grid-area: division; }
+
+.coma { grid-area: coma; }
+
+.cero { grid-area: cero; }
+
+.CE, .C, .borrar, .division,
+.siete, .ocho, .nueve, .multiplicacion,
+.cuatro, .cinco, .seis, .resta,
+.uno, .dos, .tres, .suma,
+.cero, .coma, .igual, .punto{
+    border-radius: 50px; 
+    width: 80%; 
+    height: 80%; 
+    background-color: rgb(72, 61, 61);
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    color: aliceblue;
+    margin:0 ;
+    
+}
+
+
+
