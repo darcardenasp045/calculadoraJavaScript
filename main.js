@@ -40,7 +40,6 @@ resta.addEventListener("click",()=> operacion("-"));
 multiplicacion.addEventListener("click",()=> operacion("*"));
 division.addEventListener("click",()=> operacion("/"));
 igual.addEventListener("click", equal);
-cero.addEventListener("keydown",() => mostrar("0"));
 
 function mostrar(num){
     mostrar2.textContent = mostrar2.textContent + num;
